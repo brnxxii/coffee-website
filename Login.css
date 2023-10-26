@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+*{
+    font-family: 'Comfortaa';
+}
+html,body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    
+}
+body{
+    background-color: rgb(233, 233, 233);
+}
+.logbox{
+    padding-top: 4rem;
+    margin-top: 7rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    height: 650px;
+    animation: transitionIn 1s;
+}
+.logerror{
+    padding-top: 4rem;
+    margin-top: 7rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    height: 650px;
+}
+input.email1,.pass{
+    padding: 5px;
+    border-left: none ;
+    border-top: none ;
+    border-right: none ;
+    border-image: linear-gradient(90deg, rgba(0,255,231,1) 0%, rgba(0,112,255,1) 23%, rgba(255,0,181,1) 100%) 2;
+    outline: none;
+    font-size: larger;
+    margin: 0;
+}
+.pass{
+    margin-left: 1.5rem;
+}
+h1{
+    text-transform: uppercase;
+}
+p{
+    text-align: left;
+    margin-left: 7.5rem;
+    color: grey;
+    margin-bottom: 0;
+}
+.tog{
+    position:relative;
+    right:30px;
+}
+button{
+    padding: 15px;
+    width: 300px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: #3F72AF 2px solid;
+    color: black;
+    font-size: 20px;
+    background-color: transparent;
+    box-shadow: -1px 0px 8px -3px rgba(0,0,0,0.75);
+}
+button:active{
+    font-weight: 900;
+    box-shadow: 10px 10px 0px -200px rgba(0,0,0,0.75);
+}
+.sign-up{
+    margin-top: 5rem;
+    color: black;
+}
+.logo{
+    position: relative;
+    margin-top: -4rem;
+    margin-bottom: -3rem;
+}
+
+/*SIGNUP*/
+.fname,.lname,.Uname,.email,.signpass{
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px grey solid;
+    width: 300px;
+}
+.signpass{
+    margin-left: 1.5rem;
+}
+.indication{
+    margin-left: 5rem;
+    padding: 10px;
+}
+.signbox{
+    padding-top: 3rem;
+    margin-top: 5rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    height: 750px;
+}
+.login{
+    padding-top: 10px;
+}
+.error{
+    color: red;
+    animation: transitionIn 1s;
+    margin-top: -1.5rem;
+}
+.signbox .signbtn{
+    margin-top: -2rem;
+}
+.signerr{
+    text-align: left;
+    margin-top: -1.5rem;
+    margin-left: 0;
+    text-align: center;
+    color: red;
+}
